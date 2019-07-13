@@ -17,8 +17,9 @@ This project was designed to be simple, but not trivial to ease myself into the 
 ### Secondary Tasks
 
 1. Learn more about circuit layout and schematic capture.
-1. Learn more about 
+1. Learn more about IC interfacing circuitry 
 
+Look into the readme in the project for more details
 
 ## Month 2 - Self Balancing Robot
 
