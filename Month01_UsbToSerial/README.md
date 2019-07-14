@@ -11,9 +11,15 @@ I thought it would be good to try and create a board that could be created at ho
 
 ## Objectives
 
+### Primary
+
 1. Create a single layer layout for the FT232RL chip
 1. Make it possible to create in a standard hackspace
 1. Make it less than £10 to fabricate and populate
+
+### Secondary
+
+1. Actually make the PCB 
 
 ## Scope
 
@@ -24,6 +30,9 @@ I did not keep a good log on this project, which is a correction for later proje
 
 2019-07-12 - Finished board layout and sent out to JLCPCB for fabrication. Ordered most of the parts from Farnell and hopefully going to get resistors from work.
 
-## Debrief
+## Outcomes
+
+1. Project Log - I didn't keep a very good project log on this months project. This is a key skill and it is a good idea to get into the practice of keeping an effective engineering log. I've bought a lab notebook and will keep a better log of the ideas on paper. There is a good youtube video on this <https://www.youtube.com/watch?v=jv3i_aQp4Ug>
+1. Log on Git - I didn't check in regularly to Git when working on this, so that is another correction. Making frequent checkins with more granular commit comments is a good practice to get into.
 
 
