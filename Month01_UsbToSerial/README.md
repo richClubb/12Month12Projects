@@ -14,6 +14,7 @@ I thought it would be good to try and create a board that could be created at ho
 1. Create a single layer layout for the FT232RL chip
 1. Make it possible to create in a standard hackspace
 1. Make it less than £10 to fabricate and populate
+1. Make the interface work with standard stripboard 2.54 mm pitch
 
 ## Scope
 
@@ -26,4 +27,6 @@ I did not keep a good log on this project, which is a correction for later proje
 
 ## Debrief
 
+### Things to learn from
 
+1. ALWAYS CHECK THE PIN / HEADER LAYOUT - After I had sent the board to print I was showing a colleague and measured the spacing on the pin headers. I had previously checked this A LOT, but obviously had made a change at some point and had forgotten. The spacing was off on both the X and Y positions so that the pin headers didn't line up, AND they won't line up with a standard stripboard which is what this was designed to interface with
