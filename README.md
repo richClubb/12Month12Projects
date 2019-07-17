@@ -25,4 +25,11 @@ Look into the readme in the project for more details
 
 A basic self balancing robot which is able to move forward, backward and turn left and right by command.
 
+## Month 3 - Solar Battery Charger
+
+A solar power circuit with a battery backup.
+
+I've had a lot of ideas over the years for doing remote devices with solar power, but a lot of the time it is difficult to get a reliable power source. Solar is a good option but if the device needs to be powered overnight then a battery is required. 
+
+The circuit should be able to power the device & charge the battery, and the power source to the device needs to be uninterrupted.
 
