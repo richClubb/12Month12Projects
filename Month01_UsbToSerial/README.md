@@ -39,3 +39,4 @@ I did not keep a good log on this project, which is a correction for later proje
 ### Things to learn from
 
 1. ALWAYS CHECK THE PIN / HEADER LAYOUT - After I had sent the board to print I was showing a colleague and measured the spacing on the pin headers. I had previously checked this A LOT, but obviously had made a change at some point and had forgotten. The spacing was off on both the X and Y positions so that the pin headers didn't line up, AND they won't line up with a standard stripboard which is what this was designed to interface with
+1. A good way to check the external interface is to add a layer with the proposed external interface and double check that your board interface complies. I'm not 100% sure how to do this in KiCAD but it seems like it should be possible
