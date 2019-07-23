@@ -32,3 +32,17 @@ A solar power circuit with a battery backup.
 I've had a lot of ideas over the years for doing remote devices with solar power, but a lot of the time it is difficult to get a reliable power source. Solar is a good option but if the device needs to be powered overnight then a battery is required. 
 The circuit should be able to power the device & charge the battery, and the power source to the device needs to be uninterrupted. There may also be a need to have a micro-usb or similar connector to enable topping up the battery.
 
+
+## Other ideas
+
+### Desk inspection lamp ring
+
+Hackaday featured something similar for a microscope, but this would be a bigger version for a desk magnifying glass a ring of LEDs. It has multiple modes such as quadrant lighting, individual light with a movable position to change the lighting angle, dimmable output etc.
+
+A side part of the project might be to create a procedural PCB layout so that the design can be modified to fit a new enclosure.
+
+#### Notes
+TLC5971 is a 12 channel PWM led driver which might be useful in the design, they can be serially cascaded
+Bourns Incremental Encoder 16 ppr 120rpm Solid is a rotary encoder which just gives quadrature pulses out
+
+The interface would likely have 3 knobs, 1 for the brightness (potentiometer), 2 for the sub-mode selection, and a button for the mode selection.
