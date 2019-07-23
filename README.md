@@ -49,3 +49,5 @@ TLC5971 is a 12 channel PWM led driver which might be useful in the design, they
 Bourns Incremental Encoder 16 ppr 120rpm Solid is a rotary encoder which just gives quadrature pulses out
 
 The interface would likely have 3 knobs, 1 for the brightness (potentiometer), 2 for the sub-mode selection, and a button for the mode selection.
+
+It might also be nice to have a bluetooth interface for a phone so that you can just edit it from your desk. Having RGB might be nice, but it is not essential.
