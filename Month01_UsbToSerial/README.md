@@ -31,6 +31,8 @@ I did not keep a good log on this project, which is a correction for later proje
 
 2019-07-12 - Finished board layout and sent out to JLCPCB for fabrication. Ordered most of the parts from Farnell and hopefully going to get resistors from work.
 
+2019-07-19 - Realised that I had made a mistake with the layout and the pin headers were off alignment in both the pin spacing on the protoboard and against each other.... Re-layed out the board to correct the spacing.
+
 ## Outcomes
 
 1. Project Log - I didn't keep a very good project log on this months project. This is a key skill and it is a good idea to get into the practice of keeping an effective engineering log. I've bought a lab notebook and will keep a better log of the ideas on paper. There is a good youtube video on this <https://www.youtube.com/watch?v=jv3i_aQp4Ug>
