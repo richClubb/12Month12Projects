@@ -31,9 +31,12 @@ I did not keep a good log on this project, which is a correction for later proje
 
 2019-07-12 - Finished board layout and sent out to JLCPCB for fabrication. Ordered most of the parts from Farnell and hopefully going to get resistors from work.
 
-2019-07-19 - Realised that I had made a mistake with the layout and the pin headers were off alignment in both the pin spacing on the protoboard and against each other.... Re-layed out the board to correct the spacing.
+
+![Image of the PCB][\images\V0_1Board_img01.jpg]
 
 2019-07-24 - Boards have arrived! They have the problem discussed in the last log entry, but I shall try and start up the basic functionality tomorrow. These will probably have a female header rather than the male header as they won't fit into protoboard easily with the current setup and I can just jumper connect to the board as necessary to test.
+
+
 
 ## Outcomes
 
