@@ -31,12 +31,9 @@ I did not keep a good log on this project, which is a correction for later proje
 
 2019-07-12 - Finished board layout and sent out to JLCPCB for fabrication. Ordered most of the parts from Farnell and hopefully going to get resistors from work.
 
-
-![Image of the PCB][\images\V0_1Board_img01.jpg]
-
 2019-07-24 - Boards have arrived! They have the problem discussed in the last log entry, but I shall try and start up the basic functionality tomorrow. These will probably have a female header rather than the male header as they won't fit into protoboard easily with the current setup and I can just jumper connect to the board as necessary to test.
 
-
+![Image of the PCB](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/V0_1Board_img01.jpg)
 
 ## Outcomes
 
@@ -47,3 +44,5 @@ I did not keep a good log on this project, which is a correction for later proje
 
 1. ALWAYS CHECK THE PIN / HEADER LAYOUT - After I had sent the board to print I was showing a colleague and measured the spacing on the pin headers. I had previously checked this A LOT, but obviously had made a change at some point and had forgotten. The spacing was off on both the X and Y positions so that the pin headers didn't line up, AND they won't line up with a standard stripboard which is what this was designed to interface with
 1. A good way to check the external interface is to add a layer with the proposed external interface and double check that your board interface complies. I'm not 100% sure how to do this in KiCAD but it seems like it should be possible
+1. When laying out the board, add a version number to the board silkscreen, this helps identify the board
+1. When laying out the board, think of orientation pins or markers for directional components, this is the case for the U1 IC as well as the LEDs.
