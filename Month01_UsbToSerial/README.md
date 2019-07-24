@@ -33,6 +33,8 @@ I did not keep a good log on this project, which is a correction for later proje
 
 2019-07-19 - Realised that I had made a mistake with the layout and the pin headers were off alignment in both the pin spacing on the protoboard and against each other.... Re-layed out the board to correct the spacing.
 
+2019-07-24 - Boards have arrived! They have the problem discussed in the last log entry, but I shall try and start up the basic functionality tomorrow. These will probably have a female header rather than the male header as they won't fit into protoboard easily with the current setup and I can just jumper connect to the board as necessary to test.
+
 ## Outcomes
 
 1. Project Log - I didn't keep a very good project log on this months project. This is a key skill and it is a good idea to get into the practice of keeping an effective engineering log. I've bought a lab notebook and will keep a better log of the ideas on paper. There is a good youtube video on this <https://www.youtube.com/watch?v=jv3i_aQp4Ug>
