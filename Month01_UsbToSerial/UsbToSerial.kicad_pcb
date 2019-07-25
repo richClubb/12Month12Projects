@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 7)
     (tracks 184)
     (zones 0)
     (modules 14)
@@ -30,7 +30,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -799,6 +799,11 @@
     )
   )
 
+  (gr_circle (center 102.362 73.406) (end 102.616 73.406) (layer F.SilkS) (width 0.15))
+  (gr_circle (center 101.092 73.152) (end 101.346 73.406) (layer F.Fab) (width 0.15))
+  (gr_text "UsbToSerial\nV.0.2" (at 104.14 73.406) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (gr_line (start 76.835 89.916) (end 76.835 67.31) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 113.665 89.916) (end 76.835 89.916) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 113.665 67.31) (end 113.665 89.916) (layer Edge.Cuts) (width 0.2))
