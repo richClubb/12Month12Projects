@@ -57,10 +57,28 @@ I did not keep a good log on this project, which is a correction for later proje
 
 ## Project Finish
 
-This was pretty successful. The boards worked without any functional problems or having to hand modify the board. I learned a lot from basic things to easy to miss things.
+This was pretty successful. The boards worked without any functional problems or having to hand modify the board. I learned a lot from basic things to easy to miss things. It is a single layer board so should be possible to create with home tools which meets one of the objectives.
 
 The board has been re-designed for V.0.2b which is similar to V.0.2 but a bit smaller.
 
 ![3D of V.0.2b Top](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/3D_View_V_0_2b_top.png)
 
 ![3D of V.0.2b Bottom](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/3D_View_V_0_2b_bottom.png)
+
+### BOM Cost
+
+| Item             | Quantity | Price  | Line Total |
+| ----             | -------- | -----  | ---------- |
+| Board            | 1        | £ 1.18 | £ 1.18     |
+| FT232RL          | 1        | £ 3.60 | £ 3.60     |
+| USB Connector    | 1        | £ 0.87 | £ 0.87     |
+| Red LED          | 1        | £ 0.15 | £ 0.15     |
+| Green LED        | 1        | £ 0.44 | £ 0.44     |
+| Yellow LED       | 1        | £ 0.21 | £ 0.21     |
+| 10uF Cap         | 1        | £ 0.15 | £ 0.15     |
+| 100nF Cap        | 2        | £ 0.05 | £ 0.10     |
+| 220 Ohm Resistor | 3        | £ 0.01 | £ 0.03     |
+| Header 19 pins   | 1        | £ 0.31 | £ 0.31     |
+|                  |          | Total  | £ 7.04     |
+
+This means that the board cost is less than £10 when ordered in small quantities so at least one objective is completed. I'll add the actual parts to the BOM so that they can be ordered.
