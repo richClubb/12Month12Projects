@@ -449,26 +449,26 @@ Wire Wire Line
 Wire Wire Line
 	8300 2750 8300 2800
 $Comp
-L Connector:Conn_01x07_Female J3
+L Connector:Conn_01x08_Male J3
 U 1 1 5D288061
 P 9250 4650
 F 0 "J3" H 9277 4676 50  0000 L CNN
-F 1 "Conn_01x07_Female" H 9277 4585 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9250 4650 50  0001 C CNN
+F 1 "Conn_01x08_Male" H 9277 4585 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9250 4650 50  0001 C CNN
 F 3 "~" H 9250 4650 50  0001 C CNN
 	1    9250 4650
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x07_Female J2
+L Connector:Conn_01x08_Male J2
 U 1 1 5D28816E
 P 9250 3050
 F 0 "J2" H 9277 3076 50  0000 L CNN
-F 1 "Conn_01x07_Female" H 9277 2985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9250 3050 50  0001 C CNN
+F 1 "Conn_01x08_Male" H 9277 2985 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9250 3050 50  0001 C CNN
 F 3 "~" H 9250 3050 50  0001 C CNN
 	1    9250 3050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9050 2950 8450 2950
