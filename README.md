@@ -45,7 +45,8 @@ Hackaday featured something similar for a microscope, but this would be a bigger
 A side part of the project might be to create a procedural PCB layout so that the design can be modified to fit a new enclosure.
 
 #### Notes
-TLC5971 is a 12 channel PWM led driver which might be useful in the design, they can be serially cascaded
+TLC5971 is a 12 channel PWM led driver which might be useful in the design, they can be serially cascaded.
+
 Bourns Incremental Encoder 16 ppr 120rpm Solid is a rotary encoder which just gives quadrature pulses out
 
 The interface would likely have 3 knobs, 1 for the brightness (potentiometer), 2 for the sub-mode selection, and a button for the mode selection.
