@@ -46,3 +46,5 @@ I did not keep a good log on this project, which is a correction for later proje
 1. A good way to check the external interface is to add a layer with the proposed external interface and double check that your board interface complies. I'm not 100% sure how to do this in KiCAD but it seems like it should be possible
 1. When laying out the board, add a version number to the board silkscreen, this helps identify the board
 1. When laying out the board, think of orientation pins or markers for directional components, this is the case for the U1 IC as well as the LEDs.
+1. Add text to the interface pins to make it easier to interface with. Even if you don't print it with two layers, if you choose to then you can have the text in a convenient place. It makes interfacing easier.
+1. Check your part availability!!!! I chose 7 pin headers but ended up having to put female sockets on due to my mis-spaced headers. However i found out that you can get 5, 6, 8, 9 pin headers easily, but not 7. So before you use your components check you can get them.
