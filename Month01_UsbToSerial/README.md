@@ -35,6 +35,12 @@ I did not keep a good log on this project, which is a correction for later proje
 
 ![Image of the PCB](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/V0_1Board_img01.jpg)
 
+2019-07-25 - Soldering was fairly easy, learned a bit more about how to SMD solder components from YouTube and advice from friends. Initial multimeter tests were good and it enumerated with no problems
+
+2019-07-26 - Soldered headers onto the board and tested it by programming a stripboard arduino. Worked first time with no problems.
+
+![Image of the connected board](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/V0_1Board_img02.jpg)
+
 ## Outcomes
 
 1. Project Log - I didn't keep a very good project log on this months project. This is a key skill and it is a good idea to get into the practice of keeping an effective engineering log. I've bought a lab notebook and will keep a better log of the ideas on paper. There is a good youtube video on this <https://www.youtube.com/watch?v=jv3i_aQp4Ug>
@@ -48,3 +54,13 @@ I did not keep a good log on this project, which is a correction for later proje
 1. When laying out the board, think of orientation pins or markers for directional components, this is the case for the U1 IC as well as the LEDs.
 1. Add text to the interface pins to make it easier to interface with. Even if you don't print it with two layers, if you choose to then you can have the text in a convenient place. It makes interfacing easier.
 1. Check your part availability!!!! I chose 7 pin headers but ended up having to put female sockets on due to my mis-spaced headers. However i found out that you can get 5, 6, 8, 9 pin headers easily, but not 7. So before you use your components check you can get them.
+
+## Project Finish
+
+This was pretty successful. The boards worked without any functional problems or having to hand modify the board. I learned a lot from basic things to easy to miss things.
+
+The board has been re-designed for V.0.2b which is similar to V.0.2 but a bit smaller.
+
+![3D of V.0.2b Top](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/3D_View_V_0_2b_top.png)
+
+![3D of V.0.2b Bottom](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/3D_View_V_0_2b_bottom.pmg)
