@@ -41,6 +41,8 @@ I did not keep a good log on this project, which is a correction for later proje
 
 ![Image of the connected board](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/V0_1Board_img02.jpg)
 
+2018-07-27 - Sent the V.0.2b boards out for fabrication, they won't come in until after the project has finished but assembly and testing is a small task.
+
 ## Outcomes
 
 1. Project Log - I didn't keep a very good project log on this months project. This is a key skill and it is a good idea to get into the practice of keeping an effective engineering log. I've bought a lab notebook and will keep a better log of the ideas on paper. There is a good youtube video on this <https://www.youtube.com/watch?v=jv3i_aQp4Ug>
