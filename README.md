@@ -7,7 +7,7 @@ The aim of this task is to create 12 distinct projects in 12 months. Each projec
 1. Each project WILL take 1 month - If the project is not finished in the month then it can be revisited later, but it should be a secondary priority. The whole objective is to deliver and finish the project in 1 month, and if this is not possible then the project has not necessarily failed, but it needs to be tied off
 2. Do not start work on another project until the start date - If you are working on a project do not start on another. It's fine to have ideas for new projects, but it should not go past the concept phase.
 
-## Month 1 - FTDI USB to Serial Converter (Start Date: 2019-07-01, Completed Date: ? Status: IN PROGRESS)
+## Month 1 - FTDI USB to Serial Converter (Start Date: 2019-07-01, Completed Date: 2017-07-27 Status: COMPLETED (Successful))
 This is a simple project which I wanted to have started several years ago. The main idea is to create a USB to serial converter using the FTDI FT232RL chips which I bought several years ago.
 
 This project was designed to be simple, but not trivial to ease myself into the project.
@@ -22,7 +22,13 @@ This project was designed to be simple, but not trivial to ease myself into the 
 1. Learn more about circuit layout and schematic capture.
 1. Learn more about IC interfacing circuitry 
 
-Look into the readme in the project for more details
+Look into the [readme](https://github.com/richClubb/12Month12Projects/blob/master/Month01_UsbToSerial/README.md) in the project for more details
+
+### Assessment
+
+The project objectives were met, a single sided (or double sided for extra detail but it isn't a functional requirement) board that should be able to be made in a hackspace or similar. The cost is approximately £8 which is cheaper by about £4 than the Sparkfun equivalent.
+
+Overall it was successful, it introduced me to KiCad and showed me that it isn't too difficult to lay boards out and that getting them produced is easy enough.
 
 ## Month 2 - Self Balancing Robot (Start Date: 2019-08-01, Completed Date: ?, Status: Not Started)
 
