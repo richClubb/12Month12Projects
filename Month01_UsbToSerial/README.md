@@ -65,6 +65,7 @@ The board has been re-designed for V.0.2b which is similar to V.0.2 but a bit sm
 
 ![3D of V.0.2b Bottom](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/3D_View_V_0_2b_bottom.png)
 
+![3D of V.0.2b](https://github.com/richClubb/12Month12Projects/raw/master/Month01_UsbToSerial/images/3D_View_V_0_2b.png)
 ### BOM Cost
 
 | Item             | Quantity | Price  | Line Total |
