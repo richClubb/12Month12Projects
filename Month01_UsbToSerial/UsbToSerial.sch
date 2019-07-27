@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "UsbToSerial"
+Date "2019-07-27"
+Rev "V.0.1"
+Comp "-"
+Comment1 "Author: Richard Clubb"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -478,4 +478,31 @@ Connection ~ 8450 2750
 Wire Wire Line
 	8450 2750 8300 2750
 NoConn ~ 2450 3600
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 5D3C4B10
+P 8600 5100
+F 0 "#PWR0104" H 8600 4850 50  0001 C CNN
+F 1 "GNDREF" H 8605 4927 50  0000 C CNN
+F 2 "" H 8600 5100 50  0001 C CNN
+F 3 "" H 8600 5100 50  0001 C CNN
+	1    8600 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5050 8600 5050
+Wire Wire Line
+	8600 5050 8600 5100
+Text GLabel 8700 4850 0    50   Output ~ 0
+PWR
+Wire Wire Line
+	9050 4850 8700 4850
+Text GLabel 8700 4950 0    50   Output ~ 0
+TX0
+Wire Wire Line
+	9050 4950 8700 4950
+Text GLabel 8700 3450 0    50   Output ~ 0
+RXI
+Wire Wire Line
+	8700 3450 9050 3450
 $EndSCHEMATC
