@@ -67,4 +67,5 @@ Bourns Incremental Encoder 16 ppr 120rpm Solid is a rotary encoder which just gi
 
 The interface would likely have 3 knobs, 1 for the brightness (potentiometer), 2 for the sub-mode selection, and a button for the mode selection.
 
-It might also be nice to have a bluetooth interface for a phone so that you can just edit it from your desk. Having RGB might be nice, but it is not essential.
+It might also be nice to have a bluetooth interface for a phone so that you can just edit it from your desk. Having RGB might be nice, but it is not essential. 
+<http://www.ti.com/lit/ds/symlink/tlc5973.pdf> might be a good choice for the RGB as one driver can act for each LED
