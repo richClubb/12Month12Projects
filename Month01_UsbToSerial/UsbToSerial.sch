@@ -379,10 +379,6 @@ Text GLabel 6800 3700 2    50   Input ~ 0
 DCD
 Text GLabel 6800 3600 2    50   Input ~ 0
 DCR
-Text GLabel 6800 3800 2    50   Input ~ 0
-RI
-Wire Wire Line
-	6800 3800 6500 3800
 Wire Wire Line
 	6500 3700 6800 3700
 Wire Wire Line
@@ -403,8 +399,6 @@ Text GLabel 8700 4550 0    50   Output ~ 0
 DCR
 Text GLabel 8700 4450 0    50   Output ~ 0
 DCD
-Text GLabel 8700 4650 0    50   Output ~ 0
-RI
 Text GLabel 8700 2850 0    50   Output ~ 0
 PWR
 $Comp
@@ -505,4 +499,8 @@ Text GLabel 8700 3450 0    50   Output ~ 0
 RXI
 Wire Wire Line
 	8700 3450 9050 3450
+NoConn ~ 6500 3800
+NoConn ~ 2050 3800
+Text GLabel 8700 4650 0    50   Output ~ 0
+DTR
 $EndSCHEMATC
