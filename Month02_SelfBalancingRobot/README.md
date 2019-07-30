@@ -47,7 +47,7 @@ To do turning I intend to do a tank track turning but this might end up causing 
 2019-07-27 - Researched the materials for the frame. Mike suggested Rexroth but it seems quite expensive so trying to find cheaper alternative. <https://www.motedis.co.uk> looks like it has something similar with a 20mm profile. I'm just wondering how heavy this will be. 
 I've seen similar stuff with 10mm profile which would be lighter, and V-Slot is very similar to the motedis extrusion but is available on <https://ooznest.co.uk/> who seem pretty reasonable. It might just be worth getting a meter to test it out. ((15 * 2) + (7.5 * 2) probably be enough)
 Another point is to try and use the tasks from the github page, I'll trial it on this one and see what happens.
-Also found out that you can reference tickets from the commits, so that is a plus. You can do a range of things but just adding a #xxx where xxx is the ticket number will add a note to the ticket with the commit log. There are a range of things you can do. [Here][https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message] is a stackoverflow detailing it.
+Also found out that you can reference tickets from the commits, so that is a plus. You can do a range of things but just adding a #xxx where xxx is the ticket number will add a note to the ticket with the commit log. There are a range of things you can do. [Here](https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message) is a stackoverflow detailing it.
 
 ## Outcomes
 
