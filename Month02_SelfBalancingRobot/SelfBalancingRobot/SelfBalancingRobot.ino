@@ -81,7 +81,7 @@ void setup() {
 }
 
 int targetY = 0;
-float p, i, d;
+float p, i, d, total;
 float kp, ki, kd;
 
 
@@ -91,6 +91,7 @@ void loop() {
   int error;
 
   kp = 10;
+  ki = 1;
 
   adxl.readAccel(&x, &y, &z);         // Read the accelerometer values and store them in variables declared above x,y,z
 
@@ -101,13 +102,22 @@ void loop() {
   error = targetY - y;
 
   p = kp * error;
+  if(abs(i + ki * error) <= 255)
+  {
+    i = i + ki * error;
+  }
+  total = p + i;
 
+  Serial.print("Y: ");
   Serial.print(y);
-  Serial.print(", ");
+  Serial.print(", Error: ");
   Serial.print(error);
-  Serial.print(", ");
-  Serial.println(int(p));
-  
+  Serial.print(", Prop: ");
+  Serial.print(int(p));
+  Serial.print(", Integral: ");
+  Serial.print(int(i));
+  Serial.print(", Total: ");
+  Serial.println(int(total));
 
   if(p == 0)
   {
@@ -120,15 +130,15 @@ void loop() {
   {
     digitalWrite(9, LOW);
     digitalWrite(10, LOW);
-    analogWrite(3, -int(p));
-    analogWrite(11, -int(p));  
+    analogWrite(3, abs(int(total)));
+    analogWrite(11, abs(int(total)));  
   }
   else if(p > 0)
   {
     digitalWrite(3, LOW);
     digitalWrite(11, LOW);
-    analogWrite(9, int(p));
-    analogWrite(10, int(p));  
+    analogWrite(9, int(total));
+    analogWrite(10, int(total));  
   }
  
 }
