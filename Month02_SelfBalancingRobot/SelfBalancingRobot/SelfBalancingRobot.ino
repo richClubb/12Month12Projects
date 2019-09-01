@@ -1,3 +1,5 @@
+#define DEBUG 1
+
 #include <SparkFun_ADXL345.h>         // SparkFun ADXL345 Library
 
 /*********** COMMUNICATION SELECTION ***********/
@@ -57,9 +59,11 @@ ADXL345 adxl = ADXL345();           // USE FOR SPI COMMUNICATION, ADXL345(CS_PIN
 
 void setup() {
 
-  Serial.begin(9600);                 // Start the serial terminal
-  Serial.println("SparkFun ADXL345 Accelerometer Hook Up Guide Example");
-  Serial.println();
+  #ifdef DEBUG
+  Serial.begin(115200);                 // Start the serial terminal
+  #endif
+  //Serial.println("SparkFun ADXL345 Accelerometer Hook Up Guide Example");
+  //Serial.println();
   
   pinMode(11, OUTPUT);
   pinMode(10, OUTPUT);
@@ -80,65 +84,86 @@ void setup() {
 
 }
 
-int targetY = 0;
-float p, i, d, total;
+int setPointY = 0;
 float kp, ki, kd;
+int error_rollingAverage = 0;
+float currTime, deltaT;
+unsigned int lastTime = 0;
+int previousError = 0;
+float i = 0;
+int moveOffset = 23;
 
 
 void loop() {
   // Accelerometer Readings
   int x,y,z;   
   int error;
+  float p, d, total;
 
-  kp = 10;
-  ki = 1;
+  currTime = millis();
+  deltaT = currTime - lastTime;
+
+  kp = -0.8;
+  ki = -0.03;
+  kd = -0.001;
 
   adxl.readAccel(&x, &y, &z);         // Read the accelerometer values and store them in variables declared above x,y,z
 
   // Output Results to Serial
   /* UNCOMMENT TO VIEW X Y Z ACCELEROMETER VALUES */  
   
-
-  error = targetY - y;
-
+  error_rollingAverage = ( ( error_rollingAverage * 4 ) + y ) / 5;
+  error = setPointY - y;
+  //error = setPointY - error_rollingAverage;
   p = kp * error;
-  if(abs(i + ki * error) <= 255)
-  {
-    i = i + ki * error;
-  }
-  total = p + i;
+  i = constrain( i + ki*error*(deltaT/1000),-100, 100);
+  d = kd * (error - previousError) / (deltaT/1000);
+  
+  total = p + (ki * i) + (kd * d);
 
+  #ifdef DEBUG
   Serial.print("Y: ");
   Serial.print(y);
   Serial.print(", Error: ");
   Serial.print(error);
   Serial.print(", Prop: ");
-  Serial.print(int(p));
+  Serial.print(p);
   Serial.print(", Integral: ");
-  Serial.print(int(i));
+  Serial.print(i);
+  Serial.print(", Differential: ");
+  Serial.print(d);
   Serial.print(", Total: ");
   Serial.println(int(total));
+  #endif
 
-  if(p == 0)
+  if(total == 0)
   {
     digitalWrite(3, LOW);
     digitalWrite(9, LOW);
     digitalWrite(10, LOW);
     digitalWrite(11, LOW);
   }
-  else if(p < 0)
+  else if(total < 0)
   {
+    //analogWrite(3, map ( min(abs(total), 255 ), 0, 255, 23, 255 ));
+    analogWrite(3, min(abs(total) + moveOffset, 255 ));
     digitalWrite(9, LOW);
+    
     digitalWrite(10, LOW);
-    analogWrite(3, abs(int(total)));
-    analogWrite(11, abs(int(total)));  
+    //analogWrite(11, map ( min(abs(total), 255 ), 0, 255, 23, 255 ));
+    analogWrite(11, min(abs(total) + moveOffset, 255 )); 
   }
-  else if(p > 0)
+  else if(total > 0)
   {
     digitalWrite(3, LOW);
+    //analogWrite(9, map ( min(abs(total), 255 ), 0, 255, 23, 255 ));
+    analogWrite(9, min(abs(total) + moveOffset, 255 ));
+    
+    //analogWrite(10, map ( min(abs(total), 255 ), 0, 255, 23, 255 ));  
+    analogWrite(10, min(abs(total) + moveOffset, 255 ));
     digitalWrite(11, LOW);
-    analogWrite(9, int(total));
-    analogWrite(10, int(total));  
   }
- 
+
+  lastTime = currTime;
+  previousError = error;
 }
