@@ -11,7 +11,4 @@ Month 2 - Self Balancing Robot - [Wiki](https://github.com/richClubb/12Month12Pr
 
 ## Rules
 1. Each project WILL take 1 month - If the project is not finished in the month then it can be revisited later, but it should be a secondary priority. The whole objective is to deliver and finish the project in 1 month, and if this is not possible then the project has not necessarily failed, but it needs to be tied off
-2. Do not start work on another project until the start date - If you are working on a project do not start on another. It's fine to have ideas for new projects, but it should not go past the concept phase.
-
-
-   
+2. Do not start work on another project until the start date - If you are working on a project do not start on another. It's fine to have ideas for new projects, but it should not go past the concept phase.   
