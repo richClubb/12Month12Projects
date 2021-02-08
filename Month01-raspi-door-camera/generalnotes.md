@@ -14,6 +14,8 @@ gst-launch-1.0 udpsrc port=5000 ! application/x-rtp,encoding-name=JPG,payload=26
 
 ### Next
 
+* Figure out minimum set of packages needed for this
+* Get some kind of encoding working (h264)
 * See if this is possible to stream to a mobile phone, because that might be enough of a backbone to get most of the stuff running.
 * Write a test C app which does something similar to the gst-launch command
 * Look at how this can integrate with something like OpenCV
